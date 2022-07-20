@@ -21,8 +21,8 @@ def extract_mail(address):
         
 # 住所を正規表現により分割する関数
 def divide_address(region):
-  matches = re.match(r'(...??[都道府県])(.+?市.+?区..+?|.+?郡.+?[町村]..+?|.+?[市区町村]..+?)([0-9|-]+)' , region)
-  return matches[1], matches[2], matches[3]
+    matches = re.match(r'(...??[都道府県])(.+?市.+?区..+?|.+?郡.+?[町村]..+?|.+?[市区町村]..+?)([0-9|-]+)' , region)
+    return matches[1], matches[2], matches[3]
 
 # ぐるなびのURL
 guru_url = 'https://r.gnavi.co.jp/eki/0008053/rs/?date=20220725&time=1900&people=2&fw=%E5%B1%85%E9%85%92%E5%B1%8B&p={}'
