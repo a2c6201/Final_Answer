@@ -125,7 +125,7 @@ while True:
 
     i += 1
 
-    # 未取得の店舗であれば取得
+    # 未取得の店舗であればリストに追加
     if d not in d_list:
         d_list.append(d)
         print('{}件目取得'.format(len(d_list)))
