@@ -83,7 +83,6 @@ for i in range(1, 4):
                 mail = mail_tag.get('href')
                 mail = extract_mail(mail)
             region = shop_info.find('span', class_='region').text
-            # 住所を正規表現により分割する関数
             preficture, city, address = divide_address(region)  # 住所を分割
             # 建物名を取得
             try:
